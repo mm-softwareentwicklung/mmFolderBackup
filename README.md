@@ -24,6 +24,7 @@
 - **Fortschritt in der Menüleiste:** Eine Blase unter dem Symbol zeigt Prozent und Dateien, danach Name und Grösse des ZIP. Ist das Symbol ausgeblendet, erscheint sie oben rechts unter der Menüleiste.
 - **Rechtsklick-Menü:** „Backup erzeugen“ für markierte Ordner oder den Fensterhintergrund; mehrere Ordner werden nacheinander gesichert.
 - **Protokoll und Fehlerprotokoll:** Jedes Backup mit Ordner, ZIP, Grösse und Dauer; Dateien, die sich nicht lesen liessen, stehen im Fehlerprotokoll.
+- **Signiert und notarisiert** mit einem Apple-Entwicklerzertifikat.
 - **Menüleisten-App:** Symbol wählbar und ausblendbar, Start bei der Anmeldung, Erscheinungsbild Automatisch/Hell/Dunkel, automatische Updates nach Bestätigung, **Deutsch, Englisch, Französisch, Italienisch und Spanisch**, Liquid Glass ab macOS 26.
 
 <p align="center">
@@ -69,7 +70,9 @@
 
 1. Unter [Releases](../../releases/latest) die Datei `mmFolderBackup-<Version>.dmg` herunterladen.
 2. DMG öffnen und mmFolderBackup in den Ordner „Programme“ ziehen.
-3. Beim ersten Start fragt macOS nach einer Freigabe: Systemeinstellungen › Datenschutz & Sicherheit › „Trotzdem öffnen“.
+3. mmFolderBackup starten. Die App ist signiert und von Apple beglaubigt (notarisiert) und startet ohne Rückfrage. Wie der Backup-Knopf in den Finder kommt, zeigt die Seite „Finder“ in den Einstellungen und `Anleitung.txt` in der DMG.
+
+> **Umstieg von 0.1.0:** Version 0.2.0 hat eine neue interne Kennung, deshalb kann die App sich nicht selbst darauf aktualisieren. Einmal die DMG laden und mmFolderBackup im Ordner „Programme“ ersetzen. Die Einstellungen werden übernommen; Finder-Erweiterung, Knopf in der Symbolleiste und „Beim Anmelden starten“ einmal neu einrichten.
 
 Danach aktualisiert sich mmFolderBackup selbst: Die App sucht täglich nach neuen Versionen und installiert sie nach Bestätigung (Einstellungen › Allgemein › „Jetzt suchen …“).
 
@@ -103,6 +106,7 @@ mmFolderBackup saves any folder as a ZIP with one click in Finder – with date 
 - **Progress in the menu bar:** a bubble below the icon shows percent and files, then the ZIP’s name and size. With the icon hidden, it appears at the top right below the menu bar.
 - **Context menu:** “Create Backup” for selected folders or the window background; several folders are backed up one after the other.
 - **Log and error log:** every backup with folder, ZIP, size and duration; files that couldn’t be read are listed in the error log.
+- **Signed and notarized** with an Apple developer certificate.
 - **Menu bar app:** choose or hide the icon, launch at login, appearance Automatic/Light/Dark, automatic updates once you confirm, **English, German, French, Italian and Spanish**, Liquid Glass on macOS 26 and later.
 
 <p align="center">
@@ -146,7 +150,9 @@ mmFolderBackup saves any folder as a ZIP with one click in Finder – with date 
 
 1. Download `mmFolderBackup-<version>.dmg` from [Releases](../../releases/latest).
 2. Open the disk image and drag mmFolderBackup to the Applications folder.
-3. On first launch macOS asks for your approval: System Settings › Privacy & Security › “Open Anyway”.
+3. Launch mmFolderBackup. The app is signed and notarized by Apple, so it opens without any warning. The “Finder” page of the settings and `Anleitung.txt` inside the disk image show how the Backup button gets into Finder.
+
+> **Coming from 0.1.0:** version 0.2.0 carries a new internal identifier, so the app cannot update itself to it. Download the disk image once and replace mmFolderBackup in your Applications folder. Your settings are carried over; set up the Finder extension, the toolbar button and “Launch at login” once more.
 
 After that mmFolderBackup updates itself: it checks for new versions daily and installs them once you confirm (Settings › General › “Check Now…”).
 
